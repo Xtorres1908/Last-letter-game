@@ -1,8 +1,11 @@
 import enchant 
+#This function helps in indentifing if it is a real word or not, don't forget to install enchant
+#use pip pyenchant 
 def isword(word):
     d = enchant.Dict("en_US") 
     return d.check(word)
-
+    
+#This the code for the game, here a and b represents player 1 and player 2.
 def lastletter(a,b):
     l=[]
     print("Hey, player 1 is:",a,",","player 2 is:",b)
@@ -34,7 +37,7 @@ def lastletter(a,b):
         else:
             print("Oh!,",b,"you lose and the winner is: ",a)
             break
-        
+#Here you can try the code for yourself!
 x = input("Enter the first player name: ")
 y= input("Enter the second player name: ")
 lastletter(x,y)
